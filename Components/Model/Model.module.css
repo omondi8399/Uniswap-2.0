@@ -1,0 +1,32 @@
+
+.Model{
+    position: absolute;
+    inset: 0% 0% 0% 0%;
+    background-color: #1e1e1e5a;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 111111111;
+}
+
+.Model_box{
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.Model_box_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Model_box_heading p{
+    font-size: 1.2rem;
+}
+
+.Model_box_wallet p{
+    background-color: #cfff80b;
+}
