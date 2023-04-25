@@ -1,0 +1,65 @@
+.TokenList{
+    position: absolute;
+    width: 20rem;
+    border-radius: .5rem;
+    background-color: #1e1e1e;
+    margin-top: 2rem;
+    margin-left: 66.4rem;
+    padding: 1rem;
+}
+
+.TokenList_title{
+    width: 100%;
+    padding: .2rem 1rem;
+    font-weight: 900;
+    line-height: 0;
+    color: #cff80b;
+    font-size: .8rem;
+    border-radius: .5rem;
+}
+
+.TokenList_close{
+    position: absolute;
+    right: -1rem;
+    cursor: pointer;
+    top: -2rem;
+    z-index: 1111111111;
+}
+
+.TokenList_box{
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #d1f80b53;
+}
+
+.TokenList_box_info{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.TokenList_box_info p span{
+    font-weight: 900;
+    color: #cff80b;
+    margin-right: .5rem;
+}
+
+.TokenList_box_info_symbol{
+    background-color: #cff80b;
+    padding: .5rem;
+    border-radius: .5rem;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 35rem) {
+    .TokenList{
+        margin-left: -0rem;
+        width: 90%;
+    }
+
+    .TokenList_close{
+        right: 2rem;
+    }
+}
