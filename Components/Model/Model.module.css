@@ -28,5 +28,16 @@
 }
 
 .Model_box_wallet p{
-    background-color: #cfff80b;
+    background-color: #cff80b;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #1e1e1e;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Model_box_para{
+    padding: 1rem;
+    border: 1px solid #cff80b;
+    border-radius: .5rem;
 }
