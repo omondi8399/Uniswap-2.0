@@ -3,7 +3,7 @@ import Image from "next/image"
 
 //INTERNAL IMPORT
 import Style from "./Model.module.css"
-import images from "./../..assets"
+import images from "../../assets"
 const Model = ({ setOpenModel, connectWallet }) => {
   const walletMenu = ["Metamask", "CoinBase", "Wallet", "WalletConnect"]
   return (
