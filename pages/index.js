@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 
+//INTERNAL IMPORT
+import { HeroSection } from "../Components/index"
 const Home = () => {
   return (
-    <div>HomePage</div>
+    <div>
+      <HeroSection accounts="hey" tokenData="DATA" />
+    </div>
   )
 }
 
