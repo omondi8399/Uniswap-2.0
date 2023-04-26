@@ -1,7 +1,7 @@
 
 .NavBar{
     width: 90%;
-    margin: 2rem auto;
+    margin:  2rem auto;
 }
 
 .NavBar_box{
@@ -23,7 +23,6 @@
     align-items: center;
     gap: 2rem;
 }
-
 .NavBar_box_left_menu_item{
     font-size: 1.2rem;
     color: #cff80b;
@@ -36,7 +35,6 @@
     border-radius: .5rem;
     margin: 0 auto;
 }
-
 .NavBar_box_middle_search{
     display: flex;
     justify-content: center;
@@ -45,7 +43,7 @@
     cursor: pointer;
 }
 
-.NavBar_box_middle input {
+.NavBar_box_middle input{
     background-color: transparent;
     outline: none;
     border: none;
@@ -95,7 +93,6 @@
     .NavBar{
         width: 90%;
     }
-
     .NavBar_box{
         grid-template-columns: .5fr 1fr;
     }
@@ -103,7 +100,6 @@
     .NavBar_box_middle{
         display: none;
     }
-
     .NavBar_box_left_menu{
         display: none;
     }
