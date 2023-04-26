@@ -8,7 +8,7 @@ import images from "../../assets";
 import { Model, TokenList } from "../index";
 
 //CONTEXT
-import { SwapTokenContext } from "../../Context/SwapContext";
+// import { SwapTokenContext } from "../../Context/SwapContext";
 
 const NavBar = () => {
   const { ether, account, networkConnect, connectWallet, tokenData } =
