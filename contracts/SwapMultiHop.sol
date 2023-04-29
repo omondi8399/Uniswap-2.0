@@ -29,30 +29,30 @@ contract SwapMultiHop{
         amountOut = swapRouter.exactInput(params);
     }
 
-     function swapExactOutputMultihop(address token0, address token1, uint amountOut, uint amountInMaximum) external returns (uint amountIn){
-        TransferHelper.safeTransferFrom(token0, msg.sender, address(this), amountInMaximum);
+    //  function swapExactOutputMultihop(address token0, address token1, uint amountOut, uint amountInMaximum) external returns (uint amountIn){
+    //     TransferHelper.safeTransferFrom(token0, msg.sender, address(this), amountInMaximum);
 
-        TransferHelper.safeApprove(token0, address(swapRouter), amountInMaximum);
+    //     TransferHelper.safeApprove(token0, address(swapRouter), amountInMaximum);
 
-        ISwapRouter.ExactOutputParams memory params = ISwapRouter.ExactOutputParams({
-            path: abi.encodePacked(
-                token1,
-                uint24(3000),
-                token0
-            ),
-            recipient: msg.sender,
-            deadline: block.timestamp,
-            amountOut: amountOut,
-            amountInMaximum: amountInMaximum
-        });
+    //     ISwapRouter.ExactOutputParams memory params = ISwapRouter.ExactOutputParams({
+    //         path: abi.encodePacked(
+    //             token1,
+    //             uint24(3000),
+    //             token0
+    //         ),
+    //         recipient: msg.sender,
+    //         deadline: block.timestamp,
+    //         amountOut: amountOut,
+    //         amountInMaximum: amountInMaximum
+    //     });
 
-        amountIn = swapRouter.exactOutput(params);
+    //     amountIn = swapRouter.exactOutput(params);
 
-        if(amountIn < amountInMaximum){
-            TransferHelper.safeApprove(token0, address(swapRouter), 0);
-            TransferHelper.safeTransferFrom(token0, address(this), msg.sender, amountInMaximum - amountIn);
-        }
-    }
+    //     if(amountIn < amountInMaximum){
+    //         TransferHelper.safeApprove(token0, address(swapRouter), 0);
+    //         TransferHelper.safeTransferFrom(token0, address(this), msg.sender, amountInMaximum - amountIn);
+    //     }
+    // }
 
 
 }
